@@ -19,6 +19,8 @@ public class FlagSupport
     final int lineX = 150;
     final int lineY1 = 25;
     final int lineY2 = 500;
+    private int flagHeight = 60;
+    private int flagWidth = 100;
     
     /**
      * draws flag staff
