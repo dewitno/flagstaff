@@ -4,10 +4,10 @@ import java.io.*;
 import java.awt.Color;
 import javax.swing.JColorChooser;
 /**
- * Write a description of class FlagDriver here.
+ * flag staff with moveable flag
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author dewitno
+ * @version 6/5/2021
  */
 public class FlagDriver
 {
