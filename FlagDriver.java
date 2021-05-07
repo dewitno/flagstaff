@@ -11,26 +11,23 @@ import javax.swing.JColorChooser;
  */
 public class FlagDriver
 {
-    private FlagSupport pole = new FlagSupport();
-    /**
-     * constructer
-     */
-    public FlagDriver() {
-        
-    }
+    private FlagSupport pole = new FlagSupport();  
+    private double amtDist = 5;
+    private int wordsX = 150;
+    private int wordsY = 600;
     
     /**
      * raises flag
      */    
     public void doRaiseFlag() {
-        
+        this.pole.raise(this.amtDist);
     }
     
     /**
      * lowers flag
      */
     public void doLowerFlag() {
-        
+        this.pole.lower(this.amtDist);
     }
     
     /**
@@ -44,14 +41,15 @@ public class FlagDriver
      * set distance to move flag
      */
     public void setDist(double dist) {
-        
+        this.amtDist = dist;
     }
     
     /**
      * set the name of the country
      */
     public void doName(String words) {
-        
+        UI.setColor(Color.black);
+        UI.drawString(words, this.wordsX, this.wordsY);
     }
     
     /**
